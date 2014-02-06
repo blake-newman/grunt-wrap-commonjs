@@ -25,7 +25,15 @@ wrapDefine = (filepath, content) ->
 
 module.exports = (grunt) ->
   grunt.registerMultiTask 'commonjs', 'Wrap .coffee and .js files for commonjs.', ->
+
+    options = @options(
+      pathReplace: false
+    )
+
     @filesSrc.forEach (filepath) =>
+      if options.pathReplace typeof 'function'
+        filepath = options.pathReplace filepath
+
       content = grunt.file.read path.join @data.cwd, filepath
       dest = path.join @data.dest, filepath
       wrapped = wrapDefine filepath, content
