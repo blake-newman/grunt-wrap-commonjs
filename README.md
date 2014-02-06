@@ -1,14 +1,14 @@
-# grunt-commonjs-coffee
+# grunt-contrib-commonjs
 
 Wraps .coffee and .js files into CommonJS modules for client-side usage.
 
 ## Getting Started
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: ``npm install grunt-commonjs-coffee --save-dev``
+Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: ``npm install grunt-contrib-commonjs --save-dev``
 
 Then add this line to your project's ``Gruntfile.coffee``:
 
 ```coffeescript
-grunt.loadNpmTasks 'grunt-commonjs-coffee'
+grunt.loadNpmTasks 'grunt-contrib-commonjs'
 ```
 
 ###CommonJS loader
@@ -35,10 +35,19 @@ grunt.initConfig
   # ... other configs
 ```
 
+## Configuration
+
+`pathReplace` Allows you to set filterer function for module names, for example, change all app/file to file. Default: false
+
+```coffeescript
+  pathReplace: (path) ->
+    path.replace(/^app\//, '')
+```
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
 
 ## License
-Copyright (c) 2012 Team Delicious, AVOS Systems Inc., Derek Petersen
+Copyright (c) 2012 [Team Delicious, AVOS Systems Inc., Derek Petersen](https://github.com/tuxracer/grunt-commonjs-coffee)
 
 Licensed under the MIT license.

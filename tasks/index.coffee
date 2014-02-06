@@ -1,6 +1,6 @@
 ###
-grunt-commonjs-coffee
-https://github.com/tuxracer/grunt-commonjs-coffee
+grunt-contrib-commonjs
+https://github.com/johannesbecker/grunt-contrib-commonjs
 
 Copyright (c) 2013 Team Delicious, AVOS Systems Inc.
 Licensed under the MIT license.
