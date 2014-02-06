@@ -1,16 +1,23 @@
 {
-  "name": "grunt-commonjs-coffee",
-  "description": "Deprecated in favor of grunt-browserify",
-  "version": "0.3.3",
-  "homepage": "https://github.com/tuxracer/grunt-commonjs-coffee",
+  "name": "grunt-contrib-commonjs",
+  "description": "Wrap CoffeeScript or JavaScript into a CommonJS compatible require definition",
+  "version": "0.4.0",
+  "homepage": "https://github.com/johannesbecker/grunt-contrib-commonjs",
   "author": {
-    "name": "Derek Petersen",
-    "email": "tuxracer@gmail.com",
-    "url": "https://twitter.com/tuxracer"
+    "name": "Johannes Becker",
+    "email": "jb@jbecker.it",
+    "url": "https://github.com/johannesbecker"
   },
+  "contributors": [
+    {
+      "name": "Derek Petersen",
+      "email": "tuxracer@gmail.com",
+      "url": "https://twitter.com/tuxracer"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/tuxracer/grunt-commonjs-coffee.git"
+    "url": "git://github.com/johannesbecker/grunt-contrib-commonjs.git"
   },
   "main": "./tasks/index.coffee",
   "scripts": {
