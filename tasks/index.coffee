@@ -34,11 +34,12 @@ module.exports = (grunt) ->
     )
 
     @filesSrc.forEach (filepath) =>
+      content = grunt.file.read path.join @data.cwd, filepath
+      dest = path.join @data.dest, filepath
+
       if options.pathReplace typeof 'function'
         filepath = options.pathReplace filepath
 
-      content = grunt.file.read path.join @data.cwd, filepath
-      dest = path.join @data.dest, filepath
       wrapped = wrapDefine filepath, content, options
 
       grunt.file.write dest, wrapped
