@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-commonjs",
   "description": "Wrap CoffeeScript or JavaScript into a CommonJS compatible require definition",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "homepage": "https://github.com/efacilitation/grunt-contrib-commonjs",
   "author": {
     "name": "Johannes Becker",
