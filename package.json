@@ -1,8 +1,8 @@
 {
-  "name": "grunt-contrib-commonjs",
+  "name": "grunt-wrap-commonjs",
   "description": "Wrap CoffeeScript or JavaScript into a CommonJS compatible require definition",
-  "version": "0.4.2",
-  "homepage": "https://github.com/efacilitation/grunt-contrib-commonjs",
+  "version": "0.4.3",
+  "homepage": "https://github.com/efacilitation/grunt-wrap-commonjs",
   "author": {
     "name": "Johannes Becker",
     "email": "jb@jbecker.it",
@@ -17,11 +17,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/efacilitation/grunt-contrib-commonjs.git"
+    "url": "git://github.com/efacilitation/grunt-wrap-commonjs.git"
   },
-  "main": "./tasks/index.coffee",
+  "main": "./tasks/index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "node_modules/.bin/coffee -c tasks/index.coffee"
   },
   "license": "MIT",
   "engines": {
@@ -39,6 +40,7 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-contrib-clean": "~0.5.0",
+    "coffee-script": "*"
   }
 }

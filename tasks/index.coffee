@@ -1,6 +1,6 @@
 ###
-grunt-contrib-commonjs
-https://github.com/johannesbecker/grunt-contrib-commonjs
+grunt-wrap-commonjs
+https://github.com/johannesbecker/grunt-wrap-commonjs
 
 Copyright (c) 2013 Team Delicious, AVOS Systems Inc.
 Licensed under the MIT license.

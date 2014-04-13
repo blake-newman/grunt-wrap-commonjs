@@ -16,3 +16,5 @@ results
 tmp
 
 npm-debug.log
+
+tasks/index.js
