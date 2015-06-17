@@ -17,7 +17,7 @@ isCoffeeScript = (filepath) ->
 
 wrapDefine = (filepath, content, options) ->
   definePath = filepath.replace /\.\w+$/, ''
-  if options.pathReplace typeof 'function'
+  if typeof options.pathReplace is 'function'
     definePath = options.pathReplace definePath
 
   if isCoffeeScript filepath
@@ -37,7 +37,7 @@ module.exports = (grunt) ->
       content = grunt.file.read path.join @data.cwd, filepath
       dest = path.join @data.dest, filepath
 
-      if options.pathReplace typeof 'function'
+      if typeof options.pathReplace is 'function'
         filepath = options.pathReplace filepath
 
       wrapped = wrapDefine filepath, content, options
